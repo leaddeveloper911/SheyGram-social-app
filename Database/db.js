@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 mongoose.connect("mongodb://localhost:27017/sheyGram",{useUnifiedTopology : true , useNewUrlParser : true})
 const connection = mongoose.connection
-
+//db connection
 connection.on('connected',()=>{
     console.log("mongoDb connection successful")
 })
