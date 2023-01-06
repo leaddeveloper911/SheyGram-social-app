@@ -3,7 +3,7 @@ const User = require("../Models/userModel");
 const { cloudinary } = require("../cloudinary");
 const jwt = require('jsonwebtoken')
 
-
+//user routes
 router.post("/register", async (req, res, next) => {
   console.log("Register Api");
   const { username, password } = req.body;
