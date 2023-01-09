@@ -21,7 +21,7 @@ function App() {
   const parsedUser = JSON.parse(user);
   const [token, setToken] = useState("");
   const [expiration, setExpiration] = useState("");
-
+///call api
   useEffect(() => {
     if (user) {
       dispatch(getAllPost());
